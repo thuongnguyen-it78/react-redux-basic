@@ -14,9 +14,9 @@ function HobbyList(props) {
     return (
         <ul className = "hooby-list">
             {
-                hobbyList.map(hobby => (
-                    <li className="hobby-item">
-                        {hobby}
+                hobbyList.map(({ id, title }) => (
+                    <li key = {id} className="hobby-item">
+                        {title}
                     </li>
                 ))
             }

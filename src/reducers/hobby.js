@@ -1,7 +1,7 @@
 // reducers/hobby.js
 const initialState = {
-    list: ['Listening to music'],
-    selectedId: null,
+    list: [],
+    activeId: null,
 }
 const hobbyReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -11,8 +11,13 @@ const hobbyReducer = (state = initialState, action) => {
             return {
             ...state,
             list: newList,
+            }
         }
-    }
+        case 'SET_ACTIVE_HOBBY': {
+            return {
+            ...state 
+            }
+        }
         default:
             return state;
     }
