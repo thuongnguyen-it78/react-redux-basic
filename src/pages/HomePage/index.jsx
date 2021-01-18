@@ -6,6 +6,14 @@ import HobbyList from '../../components/HomePage/HobbyList';
 import casual from 'casual-browserify'
 import { addNewHobby, setActivityHobby } from '../../actions/hobby'
 
+/**
+ * 1. store: dispatch(action), getState(), subscribe(() => {})
+ * 2. reducer(initState, action), combineReducer
+ * 3. action
+ * 4. dispatch
+ * 
+ */
+
 HomePage.propTypes = {
     
 };
@@ -19,6 +27,8 @@ function HomePage(props) {
     // promote
     // when the redux store changes so this under will be change, and compare
     // if equal so not render
+    
+    // state là nguyên cái redux store của mình
     const hobbyList = useSelector(state => state.hobby.list)
     const activeId = useSelector(state => state.hobby.activeId)
 
