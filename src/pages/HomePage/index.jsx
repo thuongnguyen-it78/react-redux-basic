@@ -56,8 +56,14 @@ function HomePage(props) {
     return (
         <div className="home-page">
             <h1>REDUX HOOKS HOMEPAGE</h1>
+
+
             <button onClick = {hanleRandomClick}>Random hobby</button>
-            <HobbyList hobbyList = {hobbyList}/>
+            <HobbyList hobbyList = {hobbyList}> 
+                
+            </HobbyList>
+
+            
         </div>
     );
 }
