@@ -4,7 +4,7 @@
         - Login
         - Recept { access token, refresh token, expires }
         - If logout but access token not running time. get access token to blacklist
-    - Refresh 
+    - Refresh
         - Check when almost to running time, use refresh token to get new token
         - if logout just need remove refresh token
         - Save in database
@@ -12,7 +12,7 @@
 2. React class component
     - props nhận ở constructor
     - props.childrent
-    - khởi tạo state oet constructor
+    - khởi tạo state ở constructor
     - render jsx ở hàm render
     - life circle: mounting(componentDidMount), updating(ComponentDidUpdate), unmounting (ComponentWillUnmount)
     - API context
@@ -26,4 +26,4 @@
     - useSelector()
     - useRef()
     - UseContext()
-    ....
+      ....

@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.scss';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HobbyList';
+import TodoList from './pages/TodoList';
 
 function App() {
-  return (
-    <div className="app">
-      <HomePage/>
-    </div>
-  );
+	return (
+		<div className="app">
+			{/* <HomePage /> */}
+			<TodoList />
+		</div>
+	);
 }
 
 export default App;
